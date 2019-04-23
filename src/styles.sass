@@ -1,0 +1,14 @@
+@import 'themes/black-theme'
+@import 'themes/light-theme'
+
+@include mat-core()
+
+$theme: $anms-black-theme
+@include angular-material-theme($anms-black-theme)
+
+//$theme: $anms-light-theme
+//@include angular-material-theme($anms-light-theme)
+
+html, body
+  margin: 0
+  height: 100%

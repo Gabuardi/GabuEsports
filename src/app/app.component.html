@@ -1,0 +1,32 @@
+<app-layout>
+  <!-- MAT SIDE NAV CONTAINER  -->
+  <mat-sidenav-container class="mat-typography">
+
+    <!-- ----------------------------------------------- MAT SIDE NAV  -->
+    <mat-sidenav #sidenav role="navigation">
+
+      <!-- SIDE NAV LIST -->
+      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+
+    </mat-sidenav>
+
+    <!--  --------------------------------------- MAT SIDE NAV CONTENT  -->
+    <mat-sidenav-content>
+      <div class="content-wrapper">
+
+        <!-- HEADER -->
+        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+
+        <!-- ROUTER CONTENT -->
+        <main>
+          <router-outlet></router-outlet>
+        </main>
+
+        <!-- FOOTER -->
+        <app-footer></app-footer>
+
+      </div>
+    </mat-sidenav-content>
+
+  </mat-sidenav-container>
+</app-layout>
