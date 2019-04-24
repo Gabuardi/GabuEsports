@@ -1,32 +1,30 @@
-<app-layout>
-  <!-- MAT SIDE NAV CONTAINER  -->
-  <mat-sidenav-container class="mat-typography">
+<!-- MAT SIDE NAV CONTAINER  -->
+<mat-sidenav-container class="mat-typography">
 
-    <!-- ----------------------------------------------- MAT SIDE NAV  -->
-    <mat-sidenav #sidenav role="navigation">
+  <!-- ----------------------------------------------- MAT SIDE NAV  -->
+  <mat-sidenav #sidenav role="navigation">
 
-      <!-- SIDE NAV LIST -->
-      <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
+    <!-- SIDE NAV LIST -->
+    <app-sidenav-list (sidenavClose)="sidenav.close()"></app-sidenav-list>
 
-    </mat-sidenav>
+  </mat-sidenav>
 
-    <!--  --------------------------------------- MAT SIDE NAV CONTENT  -->
-    <mat-sidenav-content>
-      <div class="content-wrapper">
+  <!--  --------------------------------------- MAT SIDE NAV CONTENT  -->
+  <mat-sidenav-content fxLayout="column">
 
-        <!-- HEADER -->
-        <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
+    <!-- HEADER -->
+    <app-header (sidenavToggle)="sidenav.toggle()"></app-header>
 
-        <!-- ROUTER CONTENT -->
-        <main>
-          <router-outlet></router-outlet>
-        </main>
+    <!-- ROUTER PAGE CONTENT -->
+    <main>
+      <router-outlet></router-outlet>
+    </main>
 
-        <!-- FOOTER -->
-        <app-footer></app-footer>
+    <!-- FOOTER -->
+    <div fxFlexOffset="auto">
+      <app-footer></app-footer>
+    </div>
 
-      </div>
-    </mat-sidenav-content>
+  </mat-sidenav-content>
 
-  </mat-sidenav-container>
-</app-layout>
+</mat-sidenav-container>
