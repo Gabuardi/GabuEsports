@@ -6,6 +6,7 @@ import {GlobalModule} from './global-components/global.module';
 import {MaterialModule} from './libraries-modules/material/material.module';
 import {AppRoutingModule} from './app-routing.module';
 import {PagesModule} from './pages/pages.module';
+import {FlexLayoutModule} from '@angular/flex-layout';
 
 @NgModule({
   declarations: [
@@ -13,6 +14,7 @@ import {PagesModule} from './pages/pages.module';
   ],
   imports: [
     BrowserModule,
+    FlexLayoutModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     GlobalModule,
