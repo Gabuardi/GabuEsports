@@ -8,11 +8,13 @@ import {SidenavListComponent} from './sidenav-list/sidenav-list.component';
 import { FooterComponent } from './footer/footer.component';
 import {FontAwesomeModule} from '@fortawesome/angular-fontawesome';
 import {AngularFontAwesomeModule} from '../libraries-modules/font-awesome/angular-font-awesome.module';
+import {AppRoutingModule} from '../app-routing.module';
 
 @NgModule({
   declarations: [LayoutComponent, HeaderComponent, SidenavListComponent, FooterComponent],
   imports: [
     CommonModule,
+    AppRoutingModule,
     FlexLayoutModule,
     MaterialModule,
     FontAwesomeModule,
