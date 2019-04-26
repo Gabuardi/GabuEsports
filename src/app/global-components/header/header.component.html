@@ -5,12 +5,18 @@
     </button>
   </div>
   <div>
-    <button id="home-button" mat-button routerLink="/home">
+    <!-- HOME BUTTON IN DESKTOP -->
+    <button class="home-button" mat-button routerLink="/home" fxHide.xs>
       <img routerLink="/home" src="/assets/images/dragon-logo-white.png"/>
       POLYMORPHIC
     </button>
+    <!-- HOME BUTTON IN MOBILE -->
+    <button class="home-button mobile-button" mat-button routerLink="/home" fxHide.gt-xs>
+      POLYMORPHIC
+      <img routerLink="/home" src="/assets/images/dragon-logo-white.png"/>
+    </button>
   </div>
-  <div fxFlex fxLayout fxLayoutAlign="end" fxHide.xs>
+  <div fxLayout fxFlex fxLayoutAlign="end" fxHide.xs>
     <ul fxLayout fxLayoutGap="15px" class="navigation-items">
       <li>
         <button mat-button routerLink="/theme-test">Theme Test</button>
