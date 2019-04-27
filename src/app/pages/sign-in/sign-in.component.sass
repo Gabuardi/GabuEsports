@@ -1,9 +1,17 @@
+@import "~src/styles"
+
+$primary: map-get($theme, primary)
+
 .log-in-container
   width: 100%
 
 mat-card
+  background-color: mat-color($primary)
   margin-top: 20vh
   width: 30%
+
+mat-card.mobile
+  width: 90%
 
 mat-card-content
   padding: 20px 0 40px 0
