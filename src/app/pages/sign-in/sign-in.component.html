@@ -1,24 +1,33 @@
 <div class="log-in-container" fxLayout fxLayoutAlign="center">
   <!-- MAT CARD STARTS -->
-  <mat-card fxLayout="column" fxLayoutAlign="space-between center" ngClass.xs="mobile">
+  <mat-card fxLayout="column" fxLayoutAlign="space-between center" ngClass.lt-md="mobile">
     <!-- TITLE -->
     <mat-card-title>SIGN IN</mat-card-title>
     <!-- CONTENT -->
     <mat-card-content fxLayout="column" fxLayoutAlign="center center" fxFill>
+      <form [formGroup]="signInForm">
 
-      <!-- USERNAME -->
-      <mat-form-field color="accent">
-        <input matInput placeholder="Username">
-      </mat-form-field>
+        <!-- USERNAME -->
+        <mat-form-field color="accent" appearance="outline">
+          <mat-label>Username</mat-label>
+          <input matInput [formControl]="usernameFormControl" placeholder="Username">
+          <mat-error *ngIf="usernameFormControl.errors && usernameFormControl.errors.required">This field is required
+          </mat-error>
+        </mat-form-field>
 
-      <!-- PASSWORD -->
-      <mat-form-field color="accent">
-        <input matInput placeholder="Password">
-      </mat-form-field>
+        <!-- PASSWORD -->
+        <mat-form-field color="accent" appearance="outline">
+          <mat-label>Password</mat-label>
+          <input matInput [formControl]="passwordFormControl" placeholder="Password">
+          <mat-error *ngIf="passwordFormControl.errors && passwordFormControl.errors.required">This field is required
+          </mat-error>
+        </mat-form-field>
 
-      <!-- LOG IN BUTTON -->
-      <button mat-flat-button color="accent">Log In</button>
-
+        <!-- LOG IN BUTTON -->
+        <button mat-flat-button color="accent" (click)="onSubmit()">Log In</button>
+        <mat-progress-spinner *ngIf="loading" color="accent" mode="indeterminate"></mat-progress-spinner>
+        <div *ngIf="error">{{error}}</div>
+      </form>
     </mat-card-content>
   </mat-card>
   <!-- MAT CARD ENDS -->
