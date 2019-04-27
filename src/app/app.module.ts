@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {AppComponent} from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {GlobalModule} from './global-components/global.module';
-import {MaterialModule} from './libraries-modules/material/material.module';
+import {MaterialModule} from './modules/material/material.module';
 import {AppRoutingModule} from './app-routing.module';
 import {PagesModule} from './pages/pages.module';
 import {FlexLayoutModule} from '@angular/flex-layout';
