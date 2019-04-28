@@ -1,0 +1,33 @@
+@import "~src/styles"
+
+$primary: map-get($theme, primary)
+$warn: map-get($theme, warn)
+
+.log-in-container
+  width: 100%
+
+mat-card
+  background-color: mat-color($primary)
+  margin-top: 15vh
+  width: 30%
+
+mat-card.mobile
+  width: 70%
+
+mat-card-content
+  padding: 20px 0 40px 0
+
+mat-form-field
+  width: 80%
+
+button
+  margin-top: 30px
+  width: 80%
+
+mat-progress-spinner
+  margin: 20px 0 0
+
+button#error
+  white-space: pre-wrap
+  border: none
+  background-color: rgba(mat-color($warn), 0.2)
