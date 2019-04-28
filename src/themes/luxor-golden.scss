@@ -1,0 +1,11 @@
+@import '~@angular/material/theming';
+
+$luxor-golden-primary: mat-palette($mat-amber, 600);
+$luxor-golden-accent: mat-palette($mat-teal);
+$luxor-golden-warn: mat-palette($mat-red, 500);
+
+$luxor-golden-theme: mat-dark-theme(
+    $luxor-golden-primary,
+    $luxor-golden-accent,
+    $luxor-golden-warn
+);

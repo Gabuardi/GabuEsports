@@ -4,13 +4,15 @@ $foreground: map-get($theme, foreground)
 $primary: map-get($theme, primary)
 $accent: map-get($theme, accent)
 
+$foreground-light: map-get($anms-light-theme, foreground)
+
 footer
   height: 95px
   width: 100%
   padding-top: 15px
   background-color: mat-color($primary)
-  color: mat-color($foreground, disabled-button)
-
+  color: mat-color($foreground-light, disabled-button)
+a
 fa-icon
   font-size: 32px
 
