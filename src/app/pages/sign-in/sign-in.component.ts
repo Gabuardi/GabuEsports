@@ -1,8 +1,9 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, ElementRef, OnInit, ViewChild} from '@angular/core';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {AuthenticationService} from '../../services/authentication.service';
 import {ActivatedRoute, Router} from '@angular/router';
 import {first} from 'rxjs/operators';
+import {MatButton} from '@angular/material';
 
 @Component({
   selector: 'app-sign-in',
@@ -54,6 +55,7 @@ export class SignInComponent implements OnInit {
   onSubmit() {
     console.warn('XXXXX');
     this.submitted = true;
+    this.error = null;
 
     // stop here if form is invalid
     if (this.signInForm.invalid) {

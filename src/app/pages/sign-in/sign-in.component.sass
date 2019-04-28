@@ -1,6 +1,7 @@
 @import "~src/styles"
 
 $primary: map-get($theme, primary)
+$warn: map-get($theme, warn)
 
 .log-in-container
   width: 100%
@@ -22,3 +23,10 @@ mat-form-field
 button
   margin-top: 30px
   width: 80%
+
+mat-progress-spinner
+  margin: 20px 0 20px
+
+button#error
+  border: none
+  background-color: rgba(mat-color($warn), 0.2)

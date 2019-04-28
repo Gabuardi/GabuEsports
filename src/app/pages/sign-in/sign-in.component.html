@@ -5,7 +5,6 @@
     <mat-card-title>SIGN IN</mat-card-title>
     <!-- CONTENT -->
     <mat-card-content fxLayout="column" fxLayoutAlign="center center" fxFill>
-      <form [formGroup]="signInForm">
 
         <!-- USERNAME -->
         <mat-form-field color="accent" appearance="outline">
@@ -19,15 +18,14 @@
         <mat-form-field color="accent" appearance="outline">
           <mat-label>Password</mat-label>
           <input matInput [formControl]="passwordFormControl" placeholder="Password">
-          <mat-error *ngIf="passwordFormControl.errors && passwordFormControl.errors.required">This field is required
+          <mat-error #error *ngIf="passwordFormControl.errors && passwordFormControl.errors.required">This field is required
           </mat-error>
         </mat-form-field>
 
         <!-- LOG IN BUTTON -->
         <button mat-flat-button color="accent" (click)="onSubmit()">Log In</button>
-        <mat-progress-spinner *ngIf="loading" color="accent" mode="indeterminate"></mat-progress-spinner>
-        <div *ngIf="error">{{error}}</div>
-      </form>
+        <mat-progress-spinner [diameter]="45" *ngIf="loading" color="accent" mode="indeterminate"></mat-progress-spinner>
+        <button mat-stroked-button id="error" color="warn" *ngIf="error">{{error}}</button>
     </mat-card-content>
   </mat-card>
   <!-- MAT CARD ENDS -->
