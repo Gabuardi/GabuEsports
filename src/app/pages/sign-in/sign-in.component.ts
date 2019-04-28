@@ -47,8 +47,8 @@ export class SignInComponent implements OnInit {
   // METHOD -> SET THE INITIAL VALUE OF THE FORM GROUP
   setSignInForm(): void {
     this.signInForm = this.formBuilder.group({
-      username: ['', Validators.required],
-      password: ['', Validators.required]
+      username: ['test', Validators.required],
+      password: ['test', Validators.required]
     });
   }
 
