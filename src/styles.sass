@@ -1,5 +1,6 @@
 @import 'themes/black-theme'
 @import 'themes/light-theme'
+@import 'themes/light-theme'
 
 @include mat-core()
 
@@ -10,6 +11,10 @@ $theme: $anms-black-theme
 // LIGHT THEME --------------------------------------------
 //$theme: $anms-light-theme
 //@include angular-material-theme($anms-light-theme)
+
+// LUXOR GOLDEN THEME --------------------------------------------
+$theme: $anms-black-theme
+@include angular-material-theme($anms-black-theme)
 
 html, body
   margin: 0
