@@ -23,11 +23,6 @@
       <li>
         <button mat-button routerLink="/theme-test">Theme Test</button>
       </li>
-      <mat-divider [vertical]="true"></mat-divider>
-      <li>
-        <button mat-button *ngIf="!(currentUser)" routerLink="/sign-in" [matTooltip]="'Sign In'"><fa-icon class="log-icon" [icon]="['fas', 'sign-in-alt']"></fa-icon></button>
-        <button mat-button *ngIf="(currentUser)" (click)="logout()" [matTooltip]="'Sign Out'">{{currentUser.username}}<fa-icon id="out-icon" class="log-icon" [icon]="['fas', 'sign-out-alt']"></fa-icon></button>
-      </li>
     </ul>
   </div>
 </mat-toolbar>
