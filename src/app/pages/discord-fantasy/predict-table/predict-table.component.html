@@ -1,0 +1,10 @@
+<div id="day">
+  <h2>Play-In: Día 1</h2>
+</div>
+
+<div fxLayout fxLayoutAlign="center center" id="container">
+  <app-matches-column id="matchs" [matchesList]="matchesList"></app-matches-column>
+  <div id="predicts-wrapper" fxLayout fxLayoutAlign="center center">
+    <app-users-predicts-column *ngFor="let user_predict of usersPredicts" [data]="user_predict"></app-users-predicts-column>
+  </div>
+</div>
