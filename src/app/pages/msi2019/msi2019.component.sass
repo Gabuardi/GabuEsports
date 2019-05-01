@@ -1,0 +1,42 @@
+@import "~src/styles"
+@import url('https://fonts.googleapis.com/css?family=Khand:900')
+
+$primary: map-get($theme, primary)
+$accent: map-get($theme, accent)
+
+h1
+  margin: 40px
+  font-weight: bold
+  font-size: 60px
+  color: mat-color($accent)
+  font-family: 'Khand', sans-serif
+
+h1.phone
+  margin: 20px
+  font-size: 30px
+
+h2
+  margin-top: 20px
+  font-size: 30px
+  font-weight: bold
+  font-family: 'Khand', sans-serif
+  color: mat-color($primary)
+
+h2.phone
+  margin-top: 10px
+  font-size: 20px
+
+#content-wrapper
+  width: 90%
+  margin: auto
+
+#image-container
+  width: 100%
+
+img
+  width: 40%
+  display: block
+  margin: 30px 0 50px 0
+
+img.phone
+  width: 80%
