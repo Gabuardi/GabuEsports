@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DiscordFantasyComponent } from './discord-fantasy.component';
+import { MatchComponent } from './match.component';
 
-describe('DiscordFantasyComponent', () => {
-  let component: DiscordFantasyComponent;
-  let fixture: ComponentFixture<DiscordFantasyComponent>;
+describe('MatchComponent', () => {
+  let component: MatchComponent;
+  let fixture: ComponentFixture<MatchComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DiscordFantasyComponent ]
+      declarations: [ MatchComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DiscordFantasyComponent);
+    fixture = TestBed.createComponent(MatchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

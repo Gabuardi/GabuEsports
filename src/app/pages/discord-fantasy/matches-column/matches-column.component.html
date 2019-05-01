@@ -1,0 +1,9 @@
+<div id="column" fxLayout="column" fxLayoutAlign="center center">
+  <h3 id="user-name">MATCHES</h3>
+  <mat-divider></mat-divider>
+  <h3 id="pts">PTS</h3>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <app-match *ngFor="let match of matchesList" [team1]="match.team1" [team2]="match.team2"
+               [winner]="match.winner"></app-match>
+  </div>
+</div>

@@ -1,0 +1,10 @@
+<div id="column" fxLayout="column" fxLayoutAlign="center center">
+  <h3 id="user-name">{{data.user_name}}</h3>
+  <mat-divider></mat-divider>
+  <h3 id="pts">{{data.pts}}</h3>
+  <div fxLayout="column">
+    <div id="team-container" fxLayout="column" fxLayoutAlign="center center" *ngFor="let team of data.teams_predictions">
+     <app-team-logo-picture [teamAcronym]="team"></app-team-logo-picture>
+    </div>
+  </div>
+</div>

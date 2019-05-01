@@ -1,9 +1,22 @@
 @import "~src/styles"
+@import url('https://fonts.googleapis.com/css?family=Khand:400,700')
 
-$foreground: map-get($theme, foreground)
+
 $primary: map-get($theme, primary)
+$accent: map-get($theme, accent)
 
-#content-wrapper
+#background
   height: 82.8vh
   background: url("~src/assets/site_style/msi-2019_background.jpg") top / cover
   background-blend-mode: luminosity
+
+#content-wrapper
+  padding-top: 100px
+  margin: auto
+  width: 80%
+
+h1
+  font-size: 80px
+  font-weight: bold
+  color: mat-color($accent)
+  font-family: 'Khand', sans-serif

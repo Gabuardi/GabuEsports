@@ -9,9 +9,13 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {AboutComponent} from './about/about.component';
 import { Msi2019Component } from './msi2019/msi2019.component';
 import { DiscordFantasyComponent } from './discord-fantasy/discord-fantasy.component';
+import { TeamLogoPictureComponent } from './discord-fantasy/team-logo-picture/team-logo-picture.component';
+import { UsersPredictsColumnComponent } from './discord-fantasy/users-predicts-column/users-predicts-column.component';
+import { MatchesColumnComponent } from './discord-fantasy/matches-column/matches-column.component';
+import { MatchComponent } from './discord-fantasy/match/match.component';
 
 @NgModule({
-  declarations: [LandingComponent, ThemeTestComponent, SignInComponent, AboutComponent, Msi2019Component, DiscordFantasyComponent],
+  declarations: [LandingComponent, ThemeTestComponent, SignInComponent, AboutComponent, Msi2019Component, DiscordFantasyComponent, TeamLogoPictureComponent, UsersPredictsColumnComponent, MatchesColumnComponent, MatchComponent],
   imports: [
     CommonModule,
     MaterialModule,
