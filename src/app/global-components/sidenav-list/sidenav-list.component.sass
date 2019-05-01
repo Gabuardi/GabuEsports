@@ -1,8 +1,13 @@
 @import url('https://fonts.googleapis.com/css?family=Khand:400')
+@import "~src/styles"
 
+$primary: map-get($theme, primary)
+
+
+mat-icon, fa-icon
+  color: mat-color($primary)
 
 span
-  //font-size: 5px
   font-family: 'Khand', sans-serif
 
 .nav-caption
