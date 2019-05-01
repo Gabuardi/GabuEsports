@@ -8,9 +8,10 @@ import { SignInComponent } from './sign-in/sign-in.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {AboutComponent} from './about/about.component';
 import { Msi2019Component } from './msi2019/msi2019.component';
+import { DiscordFantasyComponent } from './discord-fantasy/discord-fantasy.component';
 
 @NgModule({
-  declarations: [LandingComponent, ThemeTestComponent, SignInComponent, AboutComponent, Msi2019Component],
+  declarations: [LandingComponent, ThemeTestComponent, SignInComponent, AboutComponent, Msi2019Component, DiscordFantasyComponent],
   imports: [
     CommonModule,
     MaterialModule,
