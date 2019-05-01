@@ -17,7 +17,7 @@ export class MatchComponent implements OnInit {
     switch (team) {
       case 1: {
         this.team1result = 'WIN';
-        this.team1result = 'LOSE';
+        this.team2result = 'LOSE';
         break;
       }
       case 2: {
