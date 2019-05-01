@@ -3,8 +3,17 @@
 $foreground: map-get($theme, foreground)
 $primary: map-get($theme, primary)
 $accent: map-get($theme, accent)
-
 $foreground-light: map-get($anms-light-theme, foreground)
+
+a
+  color: mat-color($foreground-light, disabled-button)
+  outline: none
+
+a:hover
+  color: black
+
+a:active
+  color: mat-color($accent)
 
 footer
   height: 95px
