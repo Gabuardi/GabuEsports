@@ -1,0 +1,36 @@
+{
+  "matches": [
+    {"team1": "ISG", "team2": "PVB", "winner": 2},
+    {"team1": "BMR", "team2": "FB", "winner": 2},
+    {"team1": "PVB", "team2": "FB", "winner": 2},
+    {"team1": "ISG", "team2": "BMR","winner": 1},
+    {"team1": "MEG", "team2": "DFM", "winner": 2},
+    {"team1": "VEG", "team2": "INT", "winner": 1},
+    {"team1": "VEG", "team2": "DFM"},
+    {"team1": "MEG", "team2": "INT"},
+    {"team1": "PVB", "team2": "FB"}
+  ],
+  "user_predicts": [
+    {"user_name": "Demon", "pts": 0, "teams_predictions": [2, 2, 1, 2,	2, 1, 1, 1, 1], "states": []},
+    {"user_name": "TakRiuto", "pts": 0, "teams_predictions": [1, 1, 1, 1, 2, 2, 2, 2, 1], "states": []},
+    {"user_name": "Zhearun", "pts": 0, "teams_predictions": [2,	1,	1,	2,	2,	2,	1,	2, 1], "states": []},
+    {"user_name": "Dix", "pts": 0, "teams_predictions": [1,	2,	2,	1,	2,	1,	2,	2, 2], "states": []},
+    {"user_name": "Jennifer", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	1,	1,	1, 1], "states": []},
+    {"user_name": "Sokk", "pts": 0, "teams_predictions": [1,	1,	2,	1,	2,	1,	2,	2, 2], "states": []},
+    {"user_name": "Evoke", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	2,	2,	2, 1], "states": []},
+    {"user_name": "Raledro", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	1,	2,	2, 1], "states": []},
+    {"user_name": "Fakon ", "pts": 0, "teams_predictions": [1,	1,	2,	1,	2,	1,	2,	2, 2], "states": []},
+    {"user_name": "Evangelyne", "pts": 0, "teams_predictions": [2,	2,	2,	1,	2,	1,	2,	2, 2], "states": []},
+    {"user_name": "Anzbeat", "pts": 0, "teams_predictions": [2,	2,	1,	2,	2,	1,	2,	2, 1], "states": []},
+    {"user_name": "Grimo", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	1,	2,	2, 1], "states": []},
+    {"user_name": "Carlos", "pts": 0, "teams_predictions": [2,	2,	1,	2,	2,	1,	2,	2, 1], "states": []},
+    {"user_name": "Sywerk", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	2,	2,	2, 1], "states": []},
+    {"user_name": "Sembai", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	1,	2,	2, 1], "states": []},
+    {"user_name": "Gabuardi", "pts": 0, "teams_predictions": [1,	2,	1,	1,	2,	1,	1,	2, 1], "states": []},
+    {"user_name": "Bosco", "pts": 0, "teams_predictions": [2,	2,	1,	1,	2,	2,	1,	2, 1], "states": []},
+    {"user_name": "Enryuuchan", "pts": 0, "teams_predictions": [2,	1,	1,	1,	1,	1,	1,	2, 1], "states": []},
+    {"user_name": "Spyke", "pts": 0, "teams_predictions": [1,	1,	2,	1,	2,	2,	2,	2, 2], "states": []},
+    {"user_name": "Limoncito", "pts": 0, "teams_predictions": [1,	2,	1,	1,	2,	2,	2,	1, 1], "states": []},
+    {"user_name": "Lawliet ", "pts": 0, "teams_predictions": [2, 2, 2, 2, 2, 2, 2, 2, 2], "states": []}
+  ]
+}

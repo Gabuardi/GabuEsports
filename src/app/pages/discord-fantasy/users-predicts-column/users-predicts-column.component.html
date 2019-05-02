@@ -3,8 +3,9 @@
   <mat-divider></mat-divider>
   <h3 id="pts">{{data.pts}}</h3>
   <div fxLayout="column">
-    <div id="team-container" fxLayout="column" fxLayoutAlign="center center" *ngFor="let team of data.teams_predictions">
-     <app-team-logo-picture [teamAcronym]="team"></app-team-logo-picture>
+    <div id="team-container" fxLayout="column" fxLayoutAlign="center center"
+         *ngFor="let team of data.teams_predictions; let i = index">
+      <app-team-logo-picture [teamState]="data.states[i]" [teamAcronym]="team"></app-team-logo-picture>
     </div>
   </div>
 </div>

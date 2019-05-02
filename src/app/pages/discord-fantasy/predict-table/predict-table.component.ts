@@ -1,4 +1,4 @@
-import {Component, Input, OnInit} from '@angular/core';
+import {AfterContentInit, Component, Input, OnInit} from '@angular/core';
 import {UserPredictColumn} from '../../../interfaces/user-predict-column';
 import {Match} from '../../../interfaces/match';
 // @ts-ignore
@@ -9,10 +9,15 @@ import {MatchesPredicts} from '../../../interfaces/matches-predicts';
   templateUrl: './predict-table.component.html',
   styleUrls: ['./predict-table.component.sass']
 })
-export class PredictTableComponent implements OnInit {
+export class PredictTableComponent implements AfterContentInit {
 
+  @Input() title: string;
   matchesList: Match[];
   usersPredicts: UserPredictColumn[];
+
+  ngAfterContentInit(): void {
+    console.log(this.usersPredicts);
+  }
 
   @Input()
   set predictsData(value: MatchesPredicts) {
@@ -34,6 +39,8 @@ export class PredictTableComponent implements OnInit {
 
       if (match.winner !== undefined) {
         this.addPoint(match.winner, user.teams_predictions[matchIndex], user);
+      } else {
+        user.states.push('O');
       }
 
       switch (user.teams_predictions[matchIndex]) {
@@ -53,13 +60,10 @@ export class PredictTableComponent implements OnInit {
   addPoint(winner: number, teamChoised, user: UserPredictColumn) {
     if (teamChoised === winner) {
       user.pts++;
+      user.states.push('O');
+    } else {
+      user.states.push('X');
     }
-  }
-
-  constructor() {
-  }
-
-  ngOnInit() {
   }
 
 }

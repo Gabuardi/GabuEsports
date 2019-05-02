@@ -1,1 +1,4 @@
-<img src="/assets/teams/{{teamLogoFileName}}" alt="team">
+<img *ngIf="teamState === 'X'; else colorLogo" src="/assets/teams/{{teamLogoFileName}}_gray.png" alt="team">
+<ng-template #colorLogo>
+  <img src="/assets/teams/{{teamLogoFileName}}.png" alt="team">
+</ng-template>

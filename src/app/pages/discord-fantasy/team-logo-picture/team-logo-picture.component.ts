@@ -7,6 +7,7 @@ import {Component, Input, OnInit} from '@angular/core';
 })
 export class TeamLogoPictureComponent implements OnInit {
 
+  @Input() teamState: string;
   teamLogoFileName: string;
 
   constructor() {
@@ -16,19 +17,35 @@ export class TeamLogoPictureComponent implements OnInit {
   set teamAcronym(value) {
     switch (value) {
       case 'FB': {
-        this.teamLogoFileName = '1907_fenerbahce_espor_logo.png';
+        this.teamLogoFileName = '1907_fenerbahce_espor_logo';
         break;
       }
       case 'BMR': {
-        this.teamLogoFileName = 'bombers_logo.png';
+        this.teamLogoFileName = 'bombers_logo';
         break;
       }
       case 'ISG': {
-        this.teamLogoFileName = 'isurus_gaming_logo.png';
+        this.teamLogoFileName = 'isurus_gaming_logo';
         break;
       }
       case 'PVB': {
-        this.teamLogoFileName = 'phong_vu_buffalo_logo.png';
+        this.teamLogoFileName = 'phong_vu_buffalo_logo';
+        break;
+      }
+      case 'DFM': {
+        this.teamLogoFileName = 'detonation_focusme_logo';
+        break;
+      }
+      case 'INT': {
+        this.teamLogoFileName = 'intz_esports_club_logo';
+        break;
+      }
+      case 'MEG': {
+        this.teamLogoFileName = 'mega_esports_logo';
+        break;
+      }
+      case 'VEG': {
+        this.teamLogoFileName = 'vega_squadron_logo';
         break;
       }
     }
