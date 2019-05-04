@@ -1,17 +1,36 @@
-<h1 ngClass.xs="phone">Discord Fantasy</h1>
+<mat-sidenav-container>
 
-<div id="button-container">
-  <button mat-flat-button color="primary">Tabla de Posiciones</button>
-</div>
+  <!-- RANKING SIDENAV -->
+  <mat-sidenav #ranking_sidenav position="end">
+    <!--  SIDENAV HEADER  -->
+    <div id="sidenav-header" class="mat-elevation-z2" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
+      <h3>Tabla de Posiciones</h3>
+      <button id="close-sidenav-button" mat-icon-button color="accent" (click)="ranking_sidenav.close()">
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <!--  RANKING -->
+    <app-ranking-table></app-ranking-table>
+  </mat-sidenav>
 
-<mat-divider></mat-divider>
-<mat-tab-group [selectedIndex]="1">
-  <!-- -------------------------------- -->
-  <mat-tab label="Play-In: Día 1">
-    <app-predict-table [predictsData]="playInDay1" [title]="'Play-In: Día 1'"></app-predict-table>
-  </mat-tab>
-  <!-- -------------------------------- -->
-  <mat-tab label="Play-In: Día 2">
-    <app-predict-table [predictsData]="playInDay2" [title]="'Play-In: Día 2'"></app-predict-table>
-  </mat-tab>
-</mat-tab-group>
+  <mat-sidenav-content>
+    <h1 ngClass.xs="phone">Discord Fantasy</h1>
+
+    <div id="button-container">
+      <button mat-flat-button color="primary" (click)="ranking_sidenav.open()">Tabla de Posiciones</button>
+    </div>
+
+    <mat-divider></mat-divider>
+    <mat-tab-group [selectedIndex]="1">
+      <!-- -------------------------------- -->
+      <mat-tab label="Play-In: Día 1">
+        <app-predict-table [predictsData]="playInDay1" [title]="'Play-In: Día 1'"></app-predict-table>
+      </mat-tab>
+      <!-- -------------------------------- -->
+      <mat-tab label="Play-In: Día 2">
+        <app-predict-table [predictsData]="playInDay2" [title]="'Play-In: Día 2'"></app-predict-table>
+      </mat-tab>
+    </mat-tab-group>
+  </mat-sidenav-content>
+
+</mat-sidenav-container>

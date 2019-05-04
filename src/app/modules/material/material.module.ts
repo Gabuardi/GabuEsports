@@ -33,7 +33,7 @@ import {
     MatTooltipModule,
     MatProgressSpinnerModule,
     MatTableModule,
-    MatTabsModule
+    MatTabsModule,
   ], exports: [
     MatButtonModule,
     MatToolbarModule,

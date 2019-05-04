@@ -14,6 +14,7 @@ import {UsersPredictsColumnComponent} from './discord-fantasy/users-predicts-col
 import {MatchesColumnComponent} from './discord-fantasy/matches-column/matches-column.component';
 import {MatchComponent} from './discord-fantasy/match/match.component';
 import { PredictTableComponent } from './discord-fantasy/predict-table/predict-table.component';
+import { RankingTableComponent } from './discord-fantasy/ranking-table/ranking-table.component';
 
 @NgModule({
   declarations: [LandingComponent,
@@ -26,7 +27,8 @@ import { PredictTableComponent } from './discord-fantasy/predict-table/predict-t
     UsersPredictsColumnComponent,
     MatchesColumnComponent,
     MatchComponent,
-    PredictTableComponent],
+    PredictTableComponent,
+    RankingTableComponent],
   imports: [
     CommonModule,
     MaterialModule,
