@@ -1,11 +1,11 @@
 <div id="match-container" fxLayout="row" fxLayoutAlign="center center">
   <div fxLayout="column" fxLayoutAlign="center center">
     <app-team-logo-picture [teamAcronym]="team1"></app-team-logo-picture>
-    <span>{{team1result}}</span>
+    <span class="result" [class.winner]="team1result === 'GANADOR'">{{team1result}}</span>
   </div>
   <span>VS</span>
   <div fxLayout="column" fxLayoutAlign="center center">
     <app-team-logo-picture [teamAcronym]="team2"></app-team-logo-picture>
-    <span>{{team2result}}</span>
+    <span class="result" [class.winner]="team2result === 'GANADOR'">{{team2result}}</span>
   </div>
 </div>

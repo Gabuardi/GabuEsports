@@ -16,13 +16,13 @@ export class MatchComponent implements OnInit {
   set winner(team: number) {
     switch (team) {
       case 1: {
-        this.team1result = 'WIN';
-        this.team2result = 'LOSE';
+        this.team1result = 'GANADOR';
+        this.team2result = 'PERDEDOR';
         break;
       }
       case 2: {
-        this.team1result = 'LOSE';
-        this.team2result = 'WIN';
+        this.team1result = 'PERDEDOR';
+        this.team2result = 'GANADOR';
         break;
       }
     }
