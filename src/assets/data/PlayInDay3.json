@@ -32,7 +32,8 @@
     },
     {
       "team1":"INT",
-      "team2":"DFM"
+      "team2":"DFM",
+      "winner": 2
     },
     {
       "team1":"MEG",
