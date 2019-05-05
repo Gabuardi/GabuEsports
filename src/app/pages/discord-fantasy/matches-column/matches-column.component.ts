@@ -8,6 +8,7 @@ import {Match} from '../../../interfaces/match';
 })
 export class MatchesColumnComponent implements OnInit {
 
+  @Input() bo5: boolean;
   @Input() matchesList: Match[];
 
   constructor() { }

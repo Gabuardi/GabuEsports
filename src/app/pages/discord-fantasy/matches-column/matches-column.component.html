@@ -3,7 +3,15 @@
   <mat-divider></mat-divider>
   <h3 id="pts">PTS</h3>
   <div fxLayout="column" fxLayoutAlign="center center">
-    <app-match *ngFor="let match of matchesList" [team1]="match.team1" [team2]="match.team2"
-               [winner]="match.winner"></app-match>
+    <!--  BO5   -->
+    <div *ngIf="bo5; else bo1">
+      <app-match *ngFor="let match of matchesList" [team1]="match.team1" [team2]="match.team2"
+                 [team1result]="match.team1score" [team2result]="match.team2score"></app-match>
+    </div>
+    <!--  BO1   -->
+    <ng-template #bo1>
+      <app-match *ngFor="let match of matchesList" [team1]="match.team1" [team2]="match.team2"
+                 [winner]="match.winner"></app-match>
+    </ng-template>
   </div>
 </div>

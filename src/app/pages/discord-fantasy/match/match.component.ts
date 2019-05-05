@@ -9,8 +9,9 @@ export class MatchComponent implements OnInit {
 
   @Input() team1: string;
   @Input() team2: string;
-  team1result: string;
-  team2result: string;
+  @Input() bo5: boolean;
+  @Input() team1result: string | number;
+  @Input() team2result: string | number;
 
   @Input()
   set winner(team: number) {

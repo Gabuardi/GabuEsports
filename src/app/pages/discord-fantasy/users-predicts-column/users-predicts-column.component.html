@@ -6,6 +6,8 @@
     <div id="team-container" fxLayout="column" fxLayoutAlign="center center"
          *ngFor="let team of data.teams_predictions; let i = index">
       <app-team-logo-picture [teamState]="data.states[i]" [teamAcronym]="team"></app-team-logo-picture>
+      <span *ngIf="data.score_predictions" class="result"
+            [class.score-winner]="data.states[i] === 'O'">{{data.score_predictions[i]}}</span>
     </div>
   </div>
 </div>

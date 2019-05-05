@@ -48,6 +48,14 @@ export class TeamLogoPictureComponent implements OnInit {
         this.teamLogoFileName = 'vega_squadron_logo';
         break;
       }
+      case 'TL': {
+        this.teamLogoFileName = 'team_liquid_logo';
+        break;
+      }
+      case 'FW': {
+        this.teamLogoFileName = 'flash_wolves_logo';
+        break;
+      }
     }
   }
 

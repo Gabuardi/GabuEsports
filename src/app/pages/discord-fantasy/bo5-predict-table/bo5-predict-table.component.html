@@ -1,0 +1,19 @@
+<div id="hits-leyend" ngClass.xs="mobile">
+  <h3>Aciertos</h3>
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="40px" fxLayout.xs="column" fxLayoutGap.xs="10px">
+    <h4 ngClass.xs="mobile">Equipo ganador: <span>1pt</span></h4>
+    <h4 ngClass.xs="mobile">Equipo ganador + Puntaje ganador: <span>2pts</span></h4>
+  </div>
+</div>
+
+<div id="day">
+  <h2>{{title}}</h2>
+</div>
+
+<div fxLayout fxLayoutAlign="center center" id="container">
+  <app-matches-column id="matchs" [bo5]="true" [matchesList]="matchesList"></app-matches-column>
+  <div id="predicts-wrapper" fxLayout fxLayoutAlign="center center">
+    <app-users-predicts-column *ngFor="let user_predict of usersPredicts"
+                               [data]="user_predict"></app-users-predicts-column>
+  </div>
+</div>
