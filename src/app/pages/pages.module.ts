@@ -17,6 +17,7 @@ import { PredictTableComponent } from './discord-fantasy/predict-table/predict-t
 import { RankingTableComponent } from './discord-fantasy/ranking-table/ranking-table.component';
 import { Bo5PredictTableComponent } from './discord-fantasy/bo5-predict-table/bo5-predict-table.component';
 import { SchedulesComponent } from './schedules/schedules.component';
+import {DragScrollModule} from 'ngx-drag-scroll';
 
 @NgModule({
   declarations: [LandingComponent,
@@ -38,6 +39,7 @@ import { SchedulesComponent } from './schedules/schedules.component';
     MaterialModule,
     FlexLayoutModule,
     ReactiveFormsModule,
+    DragScrollModule
   ],
   exports: [LandingComponent]
 })

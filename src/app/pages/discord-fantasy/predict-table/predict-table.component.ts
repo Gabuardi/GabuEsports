@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {AfterContentInit, AfterViewChecked, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
 import {UserPredictColumn} from '../../../interfaces/user-predict-column';
 import {Match} from '../../../interfaces/match';
 // @ts-ignore
