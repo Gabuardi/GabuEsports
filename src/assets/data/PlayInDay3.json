@@ -2,27 +2,33 @@
   "matches":[
     {
       "team1":"DFM",
-      "team2":"INT"
+      "team2":"INT",
+      "winner": 1
     },
     {
       "team1":"VEG",
-      "team2":"MEG"
+      "team2":"MEG",
+      "winner": 1
     },
     {
       "team1":"DFM",
-      "team2":"MEG"
+      "team2":"MEG",
+      "winner": 1
     },
     {
       "team1":"INT",
-      "team2":"VEG"
+      "team2":"VEG",
+      "winner": 2
     },
     {
       "team1":"INT",
-      "team2":"MEG"
+      "team2":"MEG",
+      "winner": 1
     },
     {
       "team1":"DFM",
-      "team2":"VEG"
+      "team2":"VEG",
+      "winner": 2
     },
     {
       "team1":"INT",
