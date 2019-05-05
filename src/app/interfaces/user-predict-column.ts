@@ -3,4 +3,5 @@ export interface UserPredictColumn {
   pts: number;
   states?: string[];
   teams_predictions: string[] | number[];
+  score_predictions?: string[];
 }

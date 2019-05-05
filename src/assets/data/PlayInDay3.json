@@ -37,7 +37,8 @@
     },
     {
       "team1":"MEG",
-      "team2":"VEG"
+      "team2":"VEG",
+      "winner": 1
     }
   ],
   "user_predicts":[
