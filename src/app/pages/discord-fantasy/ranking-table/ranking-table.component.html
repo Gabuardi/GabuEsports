@@ -8,7 +8,7 @@
   <ng-container *ngFor="let user of usersPoints">
     <div class="item-list" fxLayout="row" fxLayoutAlign="center center">
       <h4 fxFlex="25%" [className]="'ordinal ' + getRankedClass(user)">{{user.rank}}°</h4>
-      <h4 fxFlex="50%">{{user.user_name}}</h4>
+      <h4 fxFlex="50%" [className]="getRankedClass(user)">{{user.user_name}}</h4>
       <h4 fxFlex="25%">{{user.pts}}</h4>
     </div>
     <mat-divider></mat-divider>
