@@ -23,6 +23,10 @@ export class RankingTableComponent {
         this.usersPoints.push({user_name: user.user_name, pts: user.pts});
       }
     }
+    // SORT LIST
+    this.usersPoints.sort((a, b) => (a.pts > b.pts) ? 1 : -1);
+    this.usersPoints.reverse();
+    this.tagRank();
   }
 
   // --------------------------------------------------------------------------------------
@@ -36,8 +40,25 @@ export class RankingTableComponent {
     return null;
   }
 
-  print() {
-    console.log(this.usersPoints);
+  // --------------------------------------------------------------------------------------
+  // METHOD -> COMPARE USER POINTS AND TAG A RANK
+  tagRank(): void {
+    let currentRank: number;
+    let currentPoints: number;
+    let first = true;
+    for (const user of this.usersPoints) {
+      if (first) {
+        currentRank = 1;
+        currentPoints = user.pts;
+        first = false;
+      } else {
+        if (user.pts < currentPoints) {
+          currentPoints = user.pts;
+          currentRank++;
+        }
+      }
+      user.rank = currentRank;
+    }
   }
 
 } // COMPONENT ENDS
