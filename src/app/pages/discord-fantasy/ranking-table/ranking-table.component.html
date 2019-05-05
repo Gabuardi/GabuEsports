@@ -1,5 +1,14 @@
-<mat-list>
-  <mat-list-item>
-    <h4>User</h4><h4>0</h4>
-  </mat-list-item>
-</mat-list>
+<div id="ranking-header" fxLayout="row">
+  <h4 fxFlex="25%"></h4>
+  <h4 fxFlex="50%" class="header">Apodo</h4>
+  <h4 fxFlex="25%" class="header">Pts</h4>
+</div>
+
+<ng-container *ngFor="let user of usersPoints">
+  <div class="item-list" fxLayout="row" fxLayoutAlign="center center">
+    <h4 fxFlex="25%"></h4>
+    <h4 fxFlex="50%">{{user.user_name}}</h4>
+    <h4 fxFlex="25%">{{user.pts}}</h4>
+  </div>
+  <mat-divider></mat-divider>
+</ng-container>

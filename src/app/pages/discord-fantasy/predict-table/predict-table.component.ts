@@ -1,4 +1,4 @@
-import {AfterContentInit, Component, Input, OnInit} from '@angular/core';
+import {AfterContentInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
 import {UserPredictColumn} from '../../../interfaces/user-predict-column';
 import {Match} from '../../../interfaces/match';
 // @ts-ignore
@@ -14,9 +14,10 @@ export class PredictTableComponent implements AfterContentInit {
   @Input() title: string;
   matchesList: Match[];
   usersPredicts: UserPredictColumn[];
+  @Output() usersPoints: EventEmitter<UserPredictColumn[]> = new EventEmitter<UserPredictColumn[]>();
 
   ngAfterContentInit(): void {
-    console.log(this.usersPredicts);
+    this.usersPoints.emit(this.usersPredicts);
   }
 
   @Input()
