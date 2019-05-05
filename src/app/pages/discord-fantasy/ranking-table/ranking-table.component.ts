@@ -13,6 +13,19 @@ export class RankingTableComponent {
   usersPoints: UserPoints[] = [];
 
   // --------------------------------------------------------------------------------------
+  // GET -> RETURN A CLASSNAME DEPENDING OF WHAT RANK POSITION BE THE USER
+  getRankedClass(value: UserPoints): string {
+    if (value.rank === 1) {
+      return 'rank-first';
+    } else if (value.rank === 2) {
+      return 'rank-second';
+    } else if (value.rank === 3) {
+      return 'rank-third';
+    }
+    return '';
+  }
+
+  // --------------------------------------------------------------------------------------
   // METHOD -> WITH A USERS LIST ADD TO usersPoints LIST OR SUM THEIR POINTS IF ALREADY EXIST
   addRankUsers(value: UserPredictColumn[]): void {
     for (const user of value) {
