@@ -9,7 +9,9 @@
     },
     {
       "team1": "FW",
-      "team2": "VEG"
+      "team2": "VEG",
+      "team1score": 1,
+      "team2score": 1
     }
   ],
   "user_predicts": [
