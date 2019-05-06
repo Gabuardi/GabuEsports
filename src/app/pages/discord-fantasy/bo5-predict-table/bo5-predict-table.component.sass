@@ -22,10 +22,19 @@ h2.phone
   width: 100%
   margin-bottom: 30px
 
-#matchs
+#matches
   border-right: white 1px solid
+  width: 159px
+
+#matches.overflow
+  -webkit-box-shadow: 17px 0px 14px -13px rgba(0, 0, 0, 1)
+  -moz-box-shadow: 17px 0px 14px -13px rgba(0, 0, 0, 1)
+  box-shadow: 17px 0px 14px -13px rgba(0, 0, 0, 1)
 
 #predicts-wrapper
+  max-width: calc(100% - 159px)
+  box-sizing: border-box
+  overflow-y: hidden
   overflow-x: auto
 
 #hits-leyend

@@ -2,6 +2,7 @@ import {Component, ViewChild} from '@angular/core';
 import PlayInDay1 from 'src/assets/data/PlayInDay1.json';
 import PlayInDay2 from 'src/assets/data/PlayInDay2.json';
 import PlayInDay3 from 'src/assets/data/PlayInDay3.json';
+import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
 
 import {RankingTableComponent} from './ranking-table/ranking-table.component';
 
@@ -17,6 +18,7 @@ export class DiscordFantasyComponent {
   playInDay1 = PlayInDay1;
   playInDay2 = PlayInDay2;
   playInDay3 = PlayInDay3;
+  knockoutPlayInDay1 = KnockoutPlayInDay1;
 
   rankPoints(value) {
     this.rankingTableComponent.addRankUsers(value);

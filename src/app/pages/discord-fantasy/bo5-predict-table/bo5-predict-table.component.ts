@@ -40,7 +40,7 @@ export class Bo5PredictTableComponent implements AfterContentInit {
       if (match.winner !== undefined) {
         this.addPoint(match.winner, matchIndex, user, this.getMatchScore(match));
       } else {
-        user.states.push('O');
+        user.states.push('-');
       }
 
       switch (user.teams_predictions[matchIndex]) {

@@ -11,8 +11,8 @@
 </div>
 
 <div fxLayout fxLayoutAlign="center center" id="container">
-  <app-matches-column id="matchs" [bo5]="true" [matchesList]="matchesList"></app-matches-column>
-  <div id="predicts-wrapper" fxLayout fxLayoutAlign="center center">
+  <app-matches-column id="matches" [bo5]="true" [matchesList]="matchesList" ngClass.lt-lg="overflow"></app-matches-column>
+  <div id="predicts-wrapper" fxLayout>
     <app-users-predicts-column *ngFor="let user_predict of usersPredicts"
                                [data]="user_predict"></app-users-predicts-column>
   </div>
