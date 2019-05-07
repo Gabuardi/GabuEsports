@@ -1,7 +1,7 @@
 import {AfterContentInit, Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
-import {Match} from '../../../interfaces/match';
-import {UserPredictColumn} from '../../../interfaces/user-predict-column';
-import {MatchesPredicts} from '../../../interfaces/matches-predicts';
+import {Match} from '../../../../interfaces/match';
+import {UserPredictColumn} from '../../../../interfaces/user-predict-column';
+import {MatchesPredicts} from '../../../../interfaces/matches-predicts';
 
 @Component({
   selector: 'app-bo5-predict-table',

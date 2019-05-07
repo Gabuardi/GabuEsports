@@ -1,9 +1,10 @@
-@import "~src/styles"
+@import "../../../../../styles"
+@import url('https://fonts.googleapis.com/css?family=Khand:700')
 
 $primary: map-get($theme, primary)
 $accent: map-get($theme, accent)
 
-#title
+#day
   padding-left: 5%
 
 h2
@@ -30,7 +31,34 @@ h2.phone
   -moz-box-shadow: 17px 0px 14px -13px rgba(0, 0, 0, 1)
   box-shadow: 17px 0px 14px -13px rgba(0, 0, 0, 1)
 
-#user-predicts
-  box-sizing: border-box
-  overflow-x: auto
+#predicts-wrapper
   max-width: calc(100% - 159px)
+  box-sizing: border-box
+  overflow-y: hidden
+  overflow-x: auto
+
+#hits-leyend
+  margin: 20px auto 0 auto
+  width: 730px
+  border: 1px solid mat-color($primary)
+
+  h4, h3
+    font-family: 'Khand', sans-serif
+    font-weight: bold
+
+  h3
+    margin: 10px 15px
+    font-size: 25px
+
+  h4
+    font-size: 20px
+
+    span
+      color: mat-color($primary)
+
+
+  h4.mobile
+    font-size: 15px
+
+#hits-leyend.mobile
+  width: 80vw

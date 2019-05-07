@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {Match} from '../../../interfaces/match';
+import {Match} from '../../../../interfaces/match';
 
 @Component({
   selector: 'app-matches-column',

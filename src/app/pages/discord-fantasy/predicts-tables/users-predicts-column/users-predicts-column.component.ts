@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {UserPredictColumn} from '../../../interfaces/user-predict-column';
+import {UserPredictColumn} from '../../../../interfaces/user-predict-column';
 
 @Component({
   selector: 'app-users-predicts-column',

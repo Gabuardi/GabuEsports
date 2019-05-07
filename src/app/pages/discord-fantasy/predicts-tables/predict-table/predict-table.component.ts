@@ -1,8 +1,8 @@
-import {AfterContentInit, AfterViewChecked, Component, ElementRef, EventEmitter, Input, OnInit, Output, ViewChild} from '@angular/core';
-import {UserPredictColumn} from '../../../interfaces/user-predict-column';
-import {Match} from '../../../interfaces/match';
+import {AfterContentInit, Component, EventEmitter, Input, Output} from '@angular/core';
 // @ts-ignore
-import {MatchesPredicts} from '../../../interfaces/matches-predicts';
+import {UserPredictColumn} from '../../../../interfaces/user-predict-column';
+import {Match} from '../../../../interfaces/match';
+import {MatchesPredicts} from '../../../../interfaces/matches-predicts';
 
 @Component({
   selector: 'app-predict-table',
