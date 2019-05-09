@@ -1,3 +1,4 @@
+<!-- MAT SIDE CONTAINER START -->
 <mat-sidenav-container>
 
   <!-- RANKING SIDENAV -->
@@ -43,9 +44,16 @@
         <app-bo5-predict-table [predictsData]="knockoutPlayInDay1" [title]="'Eliminatorias Play-In: Día 1'"
                            (usersPoints)="rankPoints($event)"></app-bo5-predict-table>
       </mat-tab>
+      <!-- -------------------------------- -->
+      <mat-tab label="Eliminatorias Play-In: Día 2">
+        <div id="predict-invalidation-message-container" fxLayout="row wrap" fxLayoutAlign="center center">
+        <h2 fxLayout="80%">Débido a las razones explicadas en el Discord, las predicciónes de este día quedaron inválidas</h2>
+        </div>
+      </mat-tab>
 
 
     </mat-tab-group>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
+<!-- MAT SIDE CONTAINER ENDS -->
