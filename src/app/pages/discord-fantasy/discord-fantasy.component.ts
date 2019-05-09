@@ -1,13 +1,13 @@
 import {Component, ViewChild} from '@angular/core';
+import {RankingTableComponent} from './ranking-table/ranking-table.component';
+import {UserPredictColumn} from '../../interfaces/user-predict-column';
+import {MatDialog} from '@angular/material';
+import {FormsDialogComponent} from './forms-dialog/forms-dialog.component';
+
 import PlayInDay1 from 'src/assets/data/PlayInDay1.json';
 import PlayInDay2 from 'src/assets/data/PlayInDay2.json';
 import PlayInDay3 from 'src/assets/data/PlayInDay3.json';
 import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
-
-import {RankingTableComponent} from './ranking-table/ranking-table.component';
-import {UserPredictColumn} from '../../interfaces/user-predict-column';
-import {MatDialog} from "@angular/material";
-import {FormsDialogComponent} from "./forms-dialog/forms-dialog.component";
 
 @Component({
   selector: 'app-discord-fantasy',
@@ -21,7 +21,7 @@ export class DiscordFantasyComponent {
   playInDay2 = PlayInDay2;
   playInDay3 = PlayInDay3;
   knockoutPlayInDay1 = KnockoutPlayInDay1;
-  // VIEWCHILDS
+  // VIEW CHILDREN
   @ViewChild(RankingTableComponent) rankingTableComponent: RankingTableComponent;
 
   constructor(public dialog: MatDialog) {
