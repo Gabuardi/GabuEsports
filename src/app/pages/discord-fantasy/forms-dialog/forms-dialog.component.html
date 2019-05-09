@@ -1,3 +1,36 @@
-<p>
-  forms-dialog works!
-</p>
+<!-- DIALOG START -->
+<div id="content-wrapper" fxLayout="column" fxLayoutAlign="start center">
+
+  <!-- DIALOG TITLE -->
+  <h4>Formularios de Predicciónes</h4>
+
+  <!-- PHASES ACCORDION START-->
+  <mat-accordion>
+
+    <!-- PLAY IN  -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Play-In
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <button mat-stroked-button class="form-button" *ngFor="let form of formsUrls.playIn"
+              (click)="openExternalLink(form.url)">{{form.name}}</button>
+    </mat-expansion-panel>
+
+    <!-- GROUPS -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Grupos
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <button mat-stroked-button class="form-button" *ngFor="let form of formsUrls.groups"
+              (click)="openExternalLink(form.url)">{{form.name}}</button>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+  <!-- PHASES ACCORDION ENDS-->
+
+</div>
+<!-- DIALOG ENDS -->

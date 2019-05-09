@@ -42,7 +42,8 @@ import { FormsDialogComponent } from './discord-fantasy/forms-dialog/forms-dialo
     FlexLayoutModule,
     ReactiveFormsModule,
   ],
-  exports: [LandingComponent]
+  exports: [LandingComponent],
+  entryComponents: [FormsDialogComponent]
 })
 export class PagesModule {
 }

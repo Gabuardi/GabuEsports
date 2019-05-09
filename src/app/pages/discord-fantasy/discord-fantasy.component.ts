@@ -36,7 +36,7 @@ export class DiscordFantasyComponent {
   // -----------------------------------------------------------------------------------
   // METHOD -> OPEN THE FORMS DIALOG
   openFormDialog(): void {
-    this.dialog.open(FormsDialogComponent, {width: '250px'});
+    this.dialog.open(FormsDialogComponent, {width: '350px'});
   }
 
 } // COMPONENT ENDS

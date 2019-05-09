@@ -1,7 +1,7 @@
 <!-- MAT SIDE CONTAINER START -->
 <mat-sidenav-container>
 
-  <!-- RANKING SIDENAV -->
+  <!----------------------------- RANKING SIDENAV --------------------------->
   <mat-sidenav #ranking_sidenav position="end" role="navigation" ngClass.xs="mobile">
     <!--  SIDENAV HEADER  -->
     <div id="sidenav-header" class="mat-elevation-z2" fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="15px">
@@ -14,13 +14,17 @@
     <app-ranking-table id="ranking-table"></app-ranking-table>
   </mat-sidenav>
 
+  <!-------------------------------- CONTENT------------------------------>
   <mat-sidenav-content>
     <h1 ngClass.xs="phone">Fantasy Predicts</h1>
 
-    <div id="button-container">
+    <!-------- ACTIONS BAR ------->
+    <div id="button-container" fxLayout fxLayoutGap="7px">
       <button mat-flat-button color="primary" (click)="ranking_sidenav.open()">Tabla de Posiciones</button>
+      <button mat-stroked-button color="primary" (click)="openFormDialog()">Formularios</button>
     </div>
 
+    <!--  TABS  -->
     <mat-divider></mat-divider>
     <mat-tab-group [selectedIndex]="3">
 
@@ -42,12 +46,13 @@
       <!-- -------------------------------- -->
       <mat-tab label="Eliminatorias Play-In: Día 1">
         <app-bo5-predict-table [predictsData]="knockoutPlayInDay1" [title]="'Eliminatorias Play-In: Día 1'"
-                           (usersPoints)="rankPoints($event)"></app-bo5-predict-table>
+                               (usersPoints)="rankPoints($event)"></app-bo5-predict-table>
       </mat-tab>
       <!-- -------------------------------- -->
       <mat-tab label="Eliminatorias Play-In: Día 2">
         <div id="predict-invalidation-message-container" fxLayout="row wrap" fxLayoutAlign="center center">
-        <h2 fxLayout="80%">Débido a las razones explicadas en el Discord, las predicciónes de este día quedaron inválidas</h2>
+          <h2 fxLayout="80%">Débido a las razones explicadas en el Discord, las predicciónes de este día quedaron
+            inválidas</h2>
         </div>
       </mat-tab>
 
