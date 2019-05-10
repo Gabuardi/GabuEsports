@@ -5,6 +5,8 @@
     </button>
   </div>
   <div>
+
+
     <!-- HOME BUTTON IN DESKTOP -->
     <button class="home-button" mat-button routerLink="/home" fxHide.xs>
       <img routerLink="/home" src="/assets/site_style/logo.png"/>
@@ -20,6 +22,12 @@
   <!-- NAVIGATION BUTTONS (ONLY VISIBLE ON DESKTOP) -->
   <div fxLayout fxFlex fxLayoutAlign="end" fxHide.xs>
     <ul fxLayout fxLayoutGap="6px" class="navigation-items">
+      <li>
+        <button mat-flat-button class="nav-item-button" mat-button color="accent" (click)="openDiscordInvitation()">
+          <fa-icon [icon]="['fab', 'discord']"></fa-icon> Únete al Discord
+        </button>
+      </li>
+      <li>
       <li>
         <button class="nav-item-button" mat-button routerLink="/discord-fantasy">Fantasy Predicts</button>
       </li>

@@ -1,4 +1,4 @@
-import {Component, EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Component, EventEmitter, Input, Output} from '@angular/core';
 import {Router} from '@angular/router';
 import {AuthenticationService} from '../../services/authentication.service';
 import {User} from '../../interfaces/user';
@@ -8,15 +8,15 @@ import {User} from '../../interfaces/user';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.sass']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
 
+  // COMPONENT PROPERTIES -------------------------------------------------------------
+  // INPUTS
   @Input() currentUser: User;
+  // OUTPUTS
   @Output() public sidenavToggle = new EventEmitter();
 
   constructor(private router: Router, private authenticationService: AuthenticationService) {
-  }
-
-  ngOnInit() {
   }
 
   // ------------------------------------------------------
@@ -29,6 +29,11 @@ export class HeaderComponent implements OnInit {
   logout(): void {
     this.authenticationService.logout();
     this.router.navigate(['/sign-in']);
+  }
+
+  // METHOD -> OPEN IN ANOTHER WINDOW AN DISCORD INVITATION
+  openDiscordInvitation(): void {
+    window.open('https://discord.gg/jQuKtMW');
   }
 
 } // COMPONENT ENDS
