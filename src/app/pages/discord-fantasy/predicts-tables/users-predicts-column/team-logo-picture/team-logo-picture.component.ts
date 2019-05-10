@@ -56,6 +56,18 @@ export class TeamLogoPictureComponent implements OnInit {
         this.teamLogoFileName = 'flash_wolves_logo';
         break;
       }
+      case 'G2': {
+        this.teamLogoFileName = 'g2_esports_logo';
+        break;
+      }
+      case 'SKT': {
+        this.teamLogoFileName = 'sk_telecom_logo';
+        break;
+      }
+      case 'IG': {
+        this.teamLogoFileName = 'invictus_gaming_logo';
+        break;
+      }
     }
   }
 

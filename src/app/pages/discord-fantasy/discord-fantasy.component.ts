@@ -1,14 +1,15 @@
 import {Component, ViewChild} from '@angular/core';
 import {RankingTableComponent} from './ranking-table/ranking-table.component';
-import {UserPredictColumn} from '../../interfaces/user-predict-column';
 import {MatDialog} from '@angular/material';
 import {FormsDialogComponent} from './forms-dialog/forms-dialog.component';
+import {PlayInData} from '../../interfaces/play-in-data';
+import {GroupsData} from '../../interfaces/groups-data';
 
 import PlayInDay1 from 'src/assets/data/PlayInDay1.json';
 import PlayInDay2 from 'src/assets/data/PlayInDay2.json';
 import PlayInDay3 from 'src/assets/data/PlayInDay3.json';
 import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
-import {PlayInData} from '../../interfaces/play-in-data';
+import GroupsDay1 from 'src/assets/data/GroupsDay1.json';
 
 @Component({
   selector: 'app-discord-fantasy',
@@ -21,12 +22,14 @@ export class DiscordFantasyComponent {
   stageViewControl: boolean[];
   stageSelection: string;
   playInData: PlayInData;
+  groupsData: GroupsData;
   // VIEW CHILDREN
   @ViewChild(RankingTableComponent) rankingTableComponent: RankingTableComponent;
 
   constructor(public dialog: MatDialog) {
     this.toggleStageView(1, 'groups');
     this.setPlayInData();
+    this.setGroupsData();
   }
 
   // -----------------------------------------------------------------------------------
@@ -37,6 +40,14 @@ export class DiscordFantasyComponent {
       day2: PlayInDay2,
       day3: PlayInDay3,
       knockoutDay1: KnockoutPlayInDay1
+    };
+  }
+
+  // -----------------------------------------------------------------------------------
+  // SET -> THE VARIABLE GROUPS DATA
+  setGroupsData() {
+    this.groupsData = {
+      day1: GroupsDay1,
     };
   }
 

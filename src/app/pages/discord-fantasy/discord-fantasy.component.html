@@ -61,6 +61,7 @@
     <!--  TABS  -->
     <mat-divider></mat-divider>
     <app-play-in [data]="playInData" fxShow="{{stageViewControl[0]}}" (processedData)="rankPoints($event)"></app-play-in>
+    <app-groups [data]="groupsData" fxShow="{{stageViewControl[1]}}" (processedData)="rankPoints($event)"></app-groups>
   </mat-sidenav-content>
 
 </mat-sidenav-container>
