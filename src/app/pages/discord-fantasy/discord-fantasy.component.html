@@ -29,22 +29,38 @@
         <mat-button-toggle value="groups" (click)="toggleStageView(1, 'groups')">
           Grupos
         </mat-button-toggle>
-        <mat-button-toggle value="knockouts" (click)="toggleStageView(0, 'knockouts')">
+        <mat-button-toggle value="knockouts" (click)="toggleStageView(2, 'knockouts')">
           Eliminatorias
         </mat-button-toggle>
       </mat-button-toggle-group>
 
-      <!-- RANKING BUTTON -->
-      <button mat-flat-button color="primary" (click)="ranking_sidenav.open()">Tabla de Posiciones</button>
+      <!------------ RANKING BUTTON -->
+      <!-- DESK / TABLET -->
+      <button mat-flat-button color="primary" (click)="ranking_sidenav.open()" fxHide.xs>
+        <fa-icon class="button-icons bigger-mobile" [icon]="['fas', 'crown']"></fa-icon>
+        Tabla de Posiciones
+      </button>
+      <!-- MOBILE -->
+      <button mat-flat-button color="primary" (click)="ranking_sidenav.open()" fxHide.gt-xs>
+        <fa-icon class="button-icons" [icon]="['fas', 'crown']"></fa-icon>
+      </button>
 
-      <!-- FORMS -->
-      <button mat-stroked-button color="primary" (click)="openFormDialog()">Formularios</button>
+      <!------------ FORMS -->
+      <!-- DESK / TABLET -->
+      <button mat-stroked-button color="primary" (click)="openFormDialog()" fxHide.xs>
+        <fa-icon class="button-icons bigger-mobile" [icon]="['fas', 'clipboard']"></fa-icon>
+        Formularios
+      </button>
+      <!-- MOBILE -->
+      <button mat-stroked-button color="primary" (click)="openFormDialog()" fxHide.gt-xs>
+        <fa-icon class="button-icons" [icon]="['fas', 'clipboard']"></fa-icon>
+      </button>
 
     </div>
 
     <!--  TABS  -->
     <mat-divider></mat-divider>
-    <app-play-in [data]="playInData" fxShow="{{stageViewControl[0]}}"></app-play-in>
+    <app-play-in [data]="playInData" fxShow="{{stageViewControl[0]}}" (processedData)="rankPoints($event)"></app-play-in>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

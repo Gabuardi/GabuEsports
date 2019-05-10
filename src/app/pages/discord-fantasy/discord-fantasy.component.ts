@@ -46,6 +46,12 @@ export class DiscordFantasyComponent {
     this.dialog.open(FormsDialogComponent, {width: '350px'});
   }
 
+  // METHOD -> ADD USERS WITH POINTS TO RANK DATA
+  rankPoints(value) {
+    this.rankingTableComponent.addRankUsers(value);
+  }
+
+  // METHOD -> TOGGLE THE STAGE THAT APPEAR IN THE SCREEN (Play-IN | Groups | Knockouts)
   toggleStageView(index: number, stageName: string): void {
     this.stageViewControl = [false, false, false];
     this.stageViewControl[index] = true;

@@ -4,9 +4,6 @@
 $primary: map-get($theme, primary)
 $accent: map-get($theme, accent)
 
-mat-tab.label
-  font-family: 'Khand', sans-serif !important
-
 div#button-container
   padding-left: 40px
   margin: 15px 0 25px 0
@@ -22,8 +19,16 @@ h1.phone
   margin: 20px
   font-size: 30px
 
-// RANKING SIDENAV
+.button-icons
+  font-size: 20px
 
+.button-icons.bigger-mobile
+  padding: 0 6px 8px 0
+
+.button
+
+// ----------------------------------------------------------------------
+// RANKING SIDENAV
 mat-sidenav
   position: fixed
   height: 100vh
@@ -50,17 +55,9 @@ mat-sidenav.mobile
 #ranking-table
   height: calc(100vh - 60px)
 
-#predict-invalidation-message-container
-  padding: 0 15px 0 15px
-  width: 100%
-  height: 50vh
 
-mat-button-toggle-group
-  //background-color: mat-color($primary)
-
-  mat-button-toggle
-//color: mat-color($primary)
-
+// ----------------------------------------------------------------------
+// STAGE TOGGLE
 .mat-button-toggle
   background-color: mat-color($primary)
   color: mat-color($primary, default-contrast)

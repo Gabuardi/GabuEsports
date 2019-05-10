@@ -20,9 +20,12 @@ import {Bo5PredictTableComponent} from './discord-fantasy/predicts-tables/bo5-pr
 import {SchedulesComponent} from './schedules/schedules.component';
 import { FormsDialogComponent } from './discord-fantasy/forms-dialog/forms-dialog.component';
 import { PlayInComponent } from './discord-fantasy/play-in/play-in.component';
+import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
+import { GroupsComponent } from './discord-fantasy/groups/groups.component';
 
 @NgModule({
-  declarations: [LandingComponent,
+  declarations: [
+    LandingComponent,
     ThemeTestComponent,
     SignInComponent,
     AboutComponent,
@@ -37,15 +40,17 @@ import { PlayInComponent } from './discord-fantasy/play-in/play-in.component';
     Bo5PredictTableComponent,
     SchedulesComponent,
     FormsDialogComponent,
-    PlayInComponent],
+    PlayInComponent,
+    GroupsComponent],
   imports: [
     CommonModule,
     MaterialModule,
+    FontAwesomeModule,
     FlexLayoutModule,
     ReactiveFormsModule,
   ],
   exports: [LandingComponent],
-  entryComponents: [FormsDialogComponent, PlayInComponent]
+  entryComponents: [FormsDialogComponent]
 })
 export class PagesModule {
 }
