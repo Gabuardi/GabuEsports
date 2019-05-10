@@ -10,7 +10,8 @@
     {
       "team1": "FW",
       "team2": "VEG",
-      "team1score": 1,
+      "winner": 1,
+      "team1score": 3,
       "team2score": 1
     }
   ],
