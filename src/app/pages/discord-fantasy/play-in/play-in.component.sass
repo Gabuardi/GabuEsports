@@ -1,0 +1,57 @@
+@import "~src/styles"
+@import url('https://fonts.googleapis.com/css?family=Khand:400,700')
+
+
+$primary: map-get($theme, primary)
+$accent: map-get($theme, accent)
+
+mat-tab.label
+  font-family: 'Khand', sans-serif !important
+
+div#button-container
+  padding-left: 40px
+  margin: 15px 0 25px 0
+
+h1
+  margin: 40px
+  font-weight: bold
+  font-size: 60px
+  color: mat-color($accent)
+  font-family: 'Khand', sans-serif
+
+h1.phone
+  margin: 20px
+  font-size: 30px
+
+// RANKING SIDENAV
+
+mat-sidenav
+  position: fixed
+  height: 100vh
+  width: 350px
+  border: mat-color($primary) 1px solid
+
+mat-sidenav.mobile
+  width: 100%
+
+#sidenav-header
+  height: 60px
+  padding: 0 25px 0 20px
+
+  h3
+    color: mat-color($accent)
+    font-size: 30px
+    font-weight: bold
+    font-family: 'Khand', sans-serif
+    margin: 0
+
+  #close-sidenav-button
+    font-size: 30px
+
+#ranking-table
+  height: calc(100vh - 60px)
+
+#predict-invalidation-message-container
+  padding: 0 15px 0 15px
+  width: 100%
+  height: 50vh

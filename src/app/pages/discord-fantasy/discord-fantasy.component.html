@@ -26,38 +26,7 @@
 
     <!--  TABS  -->
     <mat-divider></mat-divider>
-    <mat-tab-group [selectedIndex]="3">
-
-      <!-- -------------------------------- -->
-      <mat-tab label="Play-In: Día 1">
-        <app-predict-table [predictsData]="playInDay1" [title]="'Play-In: Día 1'"
-                           (usersPoints)="rankPoints($event)"></app-predict-table>
-      </mat-tab>
-      <!-- -------------------------------- -->
-      <mat-tab label="Play-In: Día 2">
-        <app-predict-table [predictsData]="playInDay2" [title]="'Play-In: Día 2'"
-                           (usersPoints)="rankPoints($event)"></app-predict-table>
-      </mat-tab>
-      <!-- -------------------------------- -->
-      <mat-tab label="Play-In: Día 3">
-        <app-predict-table [predictsData]="playInDay3" [title]="'Play-In: Día 3'"
-                           (usersPoints)="rankPoints($event)"></app-predict-table>
-      </mat-tab>
-      <!-- -------------------------------- -->
-      <mat-tab label="Eliminatorias Play-In: Día 1">
-        <app-bo5-predict-table [predictsData]="knockoutPlayInDay1" [title]="'Eliminatorias Play-In: Día 1'"
-                               (usersPoints)="rankPoints($event)"></app-bo5-predict-table>
-      </mat-tab>
-      <!-- -------------------------------- -->
-      <mat-tab label="Eliminatorias Play-In: Día 2">
-        <div id="predict-invalidation-message-container" fxLayout="row wrap" fxLayoutAlign="center center">
-          <h2 fxLayout="80%">Débido a las razones explicadas en el Discord, las predicciónes de este día quedaron
-            inválidas</h2>
-        </div>
-      </mat-tab>
-
-
-    </mat-tab-group>
+    <app-play-in [data]="playInData"></app-play-in>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

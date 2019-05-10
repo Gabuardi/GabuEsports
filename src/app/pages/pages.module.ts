@@ -19,6 +19,7 @@ import {RankingTableComponent} from './discord-fantasy/ranking-table/ranking-tab
 import {Bo5PredictTableComponent} from './discord-fantasy/predicts-tables/bo5-predict-table/bo5-predict-table.component';
 import {SchedulesComponent} from './schedules/schedules.component';
 import { FormsDialogComponent } from './discord-fantasy/forms-dialog/forms-dialog.component';
+import { PlayInComponent } from './discord-fantasy/play-in/play-in.component';
 
 @NgModule({
   declarations: [LandingComponent,
@@ -35,7 +36,8 @@ import { FormsDialogComponent } from './discord-fantasy/forms-dialog/forms-dialo
     RankingTableComponent,
     Bo5PredictTableComponent,
     SchedulesComponent,
-    FormsDialogComponent],
+    FormsDialogComponent,
+    PlayInComponent],
   imports: [
     CommonModule,
     MaterialModule,

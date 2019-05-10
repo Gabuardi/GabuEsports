@@ -8,6 +8,7 @@ import PlayInDay1 from 'src/assets/data/PlayInDay1.json';
 import PlayInDay2 from 'src/assets/data/PlayInDay2.json';
 import PlayInDay3 from 'src/assets/data/PlayInDay3.json';
 import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
+import {PlayInData} from '../../interfaces/play-in-data';
 
 @Component({
   selector: 'app-discord-fantasy',
@@ -17,14 +18,23 @@ import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
 export class DiscordFantasyComponent {
 
   // COMPONENT PROPERTIES -------------------------------------------------------------
-  playInDay1 = PlayInDay1;
-  playInDay2 = PlayInDay2;
-  playInDay3 = PlayInDay3;
-  knockoutPlayInDay1 = KnockoutPlayInDay1;
+  playInData: PlayInData;
   // VIEW CHILDREN
   @ViewChild(RankingTableComponent) rankingTableComponent: RankingTableComponent;
 
   constructor(public dialog: MatDialog) {
+    this.setPlayInData();
+  }
+
+  // -----------------------------------------------------------------------------------
+  // SET -> THE VARIABLE PLAY IN DATA
+  setPlayInData() {
+    this.playInData = {
+      day1: PlayInDay1,
+      day2: PlayInDay2,
+      day3: PlayInDay3,
+      knockoutDay1: KnockoutPlayInDay1
+    };
   }
 
   // -----------------------------------------------------------------------------------
