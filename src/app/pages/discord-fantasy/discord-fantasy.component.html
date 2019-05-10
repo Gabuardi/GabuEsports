@@ -20,13 +20,31 @@
 
     <!-------- ACTIONS BAR ------->
     <div id="button-container" fxLayout fxLayoutGap="7px">
+
+      <!-- PHASE TABLES TOGGLE -->
+      <mat-button-toggle-group value="{{stageSelection}}">
+        <mat-button-toggle value="play-in" (click)="toggleStageView(0, 'play-in')">
+          Play-In
+        </mat-button-toggle>
+        <mat-button-toggle value="groups" (click)="toggleStageView(1, 'groups')">
+          Grupos
+        </mat-button-toggle>
+        <mat-button-toggle value="knockouts" (click)="toggleStageView(0, 'knockouts')">
+          Eliminatorias
+        </mat-button-toggle>
+      </mat-button-toggle-group>
+
+      <!-- RANKING BUTTON -->
       <button mat-flat-button color="primary" (click)="ranking_sidenav.open()">Tabla de Posiciones</button>
+
+      <!-- FORMS -->
       <button mat-stroked-button color="primary" (click)="openFormDialog()">Formularios</button>
+
     </div>
 
     <!--  TABS  -->
     <mat-divider></mat-divider>
-    <app-play-in [data]="playInData"></app-play-in>
+    <app-play-in [data]="playInData" fxShow="{{stageViewControl[0]}}"></app-play-in>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

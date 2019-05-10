@@ -52,7 +52,7 @@ import {
     MatTableModule,
     MatTabsModule,
     MatDialogModule,
-    MatExpansionModule
+    MatExpansionModule,
   ]
 })
 export class MaterialModule {

@@ -45,7 +45,7 @@ import { PlayInComponent } from './discord-fantasy/play-in/play-in.component';
     ReactiveFormsModule,
   ],
   exports: [LandingComponent],
-  entryComponents: [FormsDialogComponent]
+  entryComponents: [FormsDialogComponent, PlayInComponent]
 })
 export class PagesModule {
 }

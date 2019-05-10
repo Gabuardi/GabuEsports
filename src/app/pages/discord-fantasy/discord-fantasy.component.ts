@@ -18,11 +18,14 @@ import {PlayInData} from '../../interfaces/play-in-data';
 export class DiscordFantasyComponent {
 
   // COMPONENT PROPERTIES -------------------------------------------------------------
+  stageViewControl: boolean[];
+  stageSelection: string;
   playInData: PlayInData;
   // VIEW CHILDREN
   @ViewChild(RankingTableComponent) rankingTableComponent: RankingTableComponent;
 
   constructor(public dialog: MatDialog) {
+    this.toggleStageView(1, 'groups');
     this.setPlayInData();
   }
 
@@ -38,15 +41,15 @@ export class DiscordFantasyComponent {
   }
 
   // -----------------------------------------------------------------------------------
-  // METHOD -> RECEIVE A USER PREDICTS OF A DAY AND ADD THEM TO THE RANK OR SUM HIS POINTS
-  rankPoints(value: UserPredictColumn[]): void {
-    this.rankingTableComponent.addRankUsers(value);
-  }
-
-  // -----------------------------------------------------------------------------------
   // METHOD -> OPEN THE FORMS DIALOG
   openFormDialog(): void {
     this.dialog.open(FormsDialogComponent, {width: '350px'});
+  }
+
+  toggleStageView(index: number, stageName: string): void {
+    this.stageViewControl = [false, false, false];
+    this.stageViewControl[index] = true;
+    this.stageSelection = stageName;
   }
 
 } // COMPONENT ENDS
