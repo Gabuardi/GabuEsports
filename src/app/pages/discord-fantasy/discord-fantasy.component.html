@@ -19,10 +19,10 @@
     <h1 ngClass.xs="phone">Fantasy Predicts</h1>
 
     <!-------- ACTIONS BAR ------->
-    <div id="button-container" fxLayout fxLayoutGap="7px">
+    <div id="button-container" fxLayout fxLayoutGap="7px" fxLayoutAlign="start center" fxLayoutAlign.xs="center center" ngClass.xs="mobile">
 
       <!-- PHASE TABLES TOGGLE -->
-      <mat-button-toggle-group value="{{stageSelection}}">
+      <mat-button-toggle-group value="{{stageSelection}}" appearance="legacy">
         <mat-button-toggle value="play-in" (click)="toggleStageView(0, 'play-in')">
           Play-In
         </mat-button-toggle>

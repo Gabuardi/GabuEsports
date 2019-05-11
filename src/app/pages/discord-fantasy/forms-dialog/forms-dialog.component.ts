@@ -21,6 +21,7 @@ export class FormsDialogComponent {
       ],
       groups: [
         {name: 'Día 1', url: 'https://forms.gle/QPT55zoLmDoiYqj28'},
+        {name: 'Día 2', url: 'https://forms.gle/6cM49T7QTGv7qHHF7'}
       ]
     };
   }
