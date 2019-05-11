@@ -7,15 +7,18 @@
     },
     {
       "team1": "PVB",
-      "team2": "FW"
+      "team2": "FW",
+      "winner": 2
     },
     {
       "team1": "TL",
-      "team2": "IG"
+      "team2": "IG",
+      "winner": 2
     },
     {
       "team1": "SKT",
-      "team2": "PVB"
+      "team2": "PVB",
+      "winner": 1
     },
     {
       "team1": "FW",
