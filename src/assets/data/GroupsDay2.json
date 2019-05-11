@@ -22,11 +22,13 @@
     },
     {
       "team1": "FW",
-      "team2": "G2"
+      "team2": "G2",
+      "winner": 2
     },
     {
       "team1": "IG",
-      "team2": "SKT"
+      "team2": "SKT",
+      "winner": 1
     }
   ],
   "user_predicts": [
