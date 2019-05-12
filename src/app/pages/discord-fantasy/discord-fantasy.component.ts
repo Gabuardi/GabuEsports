@@ -11,6 +11,8 @@ import PlayInDay3 from 'src/assets/data/PlayInDay3.json';
 import KnockoutPlayInDay1 from 'src/assets/data/KnockoutPlayInDay1.json';
 import GroupsDay1 from 'src/assets/data/GroupsDay1.json';
 import GroupsDay2 from 'src/assets/data/GroupsDay2.json';
+import GroupsDay3 from 'src/assets/data/GroupsDay3.json';
+
 
 @Component({
   selector: 'app-discord-fantasy',
@@ -49,7 +51,9 @@ export class DiscordFantasyComponent {
   setGroupsData() {
     this.groupsData = {
       day1: GroupsDay1,
-      day2: GroupsDay2
+      day2: GroupsDay2,
+      day3: GroupsDay3
+
     };
   }
 
