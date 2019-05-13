@@ -2,27 +2,33 @@
   "matches": [
     {
       "team1": "G2",
-      "team2": "FW"
+      "team2": "FW",
+      "winner": 1
     },
     {
       "team1": "PVB",
-      "team2": "TL"
+      "team2": "TL",
+      "winner": 2
     },
     {
       "team1": "G2",
-      "team2": "IG"
+      "team2": "IG",
+      "winner": 2
     },
     {
       "team1": "FW",
-      "team2": "SKT"
+      "team2": "SKT",
+      "winner": 2
     },
     {
       "team1": "IG",
-      "team2": "TL"
+      "team2": "TL",
+      "winner": 1
     },
     {
       "team1": "PVB",
-      "team2": "SKT"
+      "team2": "SKT",
+      "winner": 2
     }
   ],
   "user_predicts": [

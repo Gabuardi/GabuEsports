@@ -24,6 +24,7 @@ export class FormsDialogComponent {
         {name: 'Día 2', url: 'https://forms.gle/6cM49T7QTGv7qHHF7'},
         {name: 'Día 3', url: 'https://forms.gle/Jbc9pjxixU8BK6DW7'},
         {name: 'Día 4', url: 'https://forms.gle/qZ3nhVkxhf7pzE7u5'},
+        {name: 'Día 5', url: 'https://forms.gle/np9mJpEmW5wDH8n57'}
       ]
     };
   }
