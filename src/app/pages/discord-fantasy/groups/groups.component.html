@@ -1,4 +1,4 @@
-<mat-tab-group [selectedIndex]="2">
+<mat-tab-group [selectedIndex]="3">
 
   <!-- -------------------------------- -->
   <mat-tab label="Día 1">
@@ -15,6 +15,12 @@
   <!-- -------------------------------- -->
   <mat-tab label="Día 3">
     <app-predict-table [predictsData]="data.day3" [title]="'Grupos: Día 3'"
+                       (usersPoints)="emmitEventProcessedData($event)"></app-predict-table>
+
+  </mat-tab>
+  <!-- -------------------------------- -->
+  <mat-tab label="Día 4">
+    <app-predict-table [predictsData]="data.day4" [title]="'Grupos: Día 4'"
                        (usersPoints)="emmitEventProcessedData($event)"></app-predict-table>
 
   </mat-tab>
