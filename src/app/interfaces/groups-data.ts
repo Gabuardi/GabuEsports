@@ -3,4 +3,5 @@ export interface GroupsData {
   day2: any;
   day3: any;
   day4: any;
+  day5: any;
 }

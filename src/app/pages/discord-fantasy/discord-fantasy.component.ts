@@ -13,6 +13,8 @@ import GroupsDay1 from 'src/assets/data/GroupsDay1.json';
 import GroupsDay2 from 'src/assets/data/GroupsDay2.json';
 import GroupsDay3 from 'src/assets/data/GroupsDay3.json';
 import GroupsDay4 from 'src/assets/data/GroupsDay4.json';
+import GroupsDay5 from 'src/assets/data/GroupsDay5.json';
+
 
 @Component({
   selector: 'app-discord-fantasy',
@@ -53,7 +55,8 @@ export class DiscordFantasyComponent {
       day1: GroupsDay1,
       day2: GroupsDay2,
       day3: GroupsDay3,
-      day4: GroupsDay4
+      day4: GroupsDay4,
+      day5: GroupsDay5
     };
   }
 
