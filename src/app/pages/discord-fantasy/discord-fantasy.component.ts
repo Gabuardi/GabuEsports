@@ -14,6 +14,8 @@ import GroupsDay2 from 'src/assets/data/GroupsDay2.json';
 import GroupsDay3 from 'src/assets/data/GroupsDay3.json';
 import GroupsDay4 from 'src/assets/data/GroupsDay4.json';
 import GroupsDay5 from 'src/assets/data/GroupsDay5.json';
+import SemifinalsDay1 from 'src/assets/data/SemifinalsDay1.json';
+import {KnockoutsData} from "../../interfaces/knockouts-data";
 
 
 @Component({
@@ -28,13 +30,15 @@ export class DiscordFantasyComponent {
   stageSelection: string;
   playInData: PlayInData;
   groupsData: GroupsData;
+  knockoutsData: KnockoutsData;
   // VIEW CHILDREN
   @ViewChild(RankingTableComponent) rankingTableComponent: RankingTableComponent;
 
   constructor(public dialog: MatDialog) {
-    this.toggleStageView(1, 'groups');
+    this.toggleStageView(2, 'knockouts');
     this.setPlayInData();
     this.setGroupsData();
+    this.setKnockoutsData();
   }
 
   // -----------------------------------------------------------------------------------
@@ -57,6 +61,16 @@ export class DiscordFantasyComponent {
       day3: GroupsDay3,
       day4: GroupsDay4,
       day5: GroupsDay5
+    };
+  }
+
+  // -----------------------------------------------------------------------------------
+  // SET -> THE VARIABLE KNOCKOUT DATA
+  setKnockoutsData() {
+    this.knockoutsData = {
+      semifinals_day_1: SemifinalsDay1,
+      semifinals_day_2: null,
+      finals: null
     };
   }
 

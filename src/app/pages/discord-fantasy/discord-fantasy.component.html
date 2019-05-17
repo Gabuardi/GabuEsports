@@ -62,6 +62,7 @@
     <mat-divider></mat-divider>
     <app-play-in [data]="playInData" fxShow="{{stageViewControl[0]}}" (processedData)="rankPoints($event)"></app-play-in>
     <app-groups [data]="groupsData" fxShow="{{stageViewControl[1]}}" (processedData)="rankPoints($event)"></app-groups>
+    <app-knockouts [data]="knockoutsData" fxShow="{{stageViewControl[2]}}" (processedData)="rankPoints($event)"></app-knockouts>
   </mat-sidenav-content>
 
 </mat-sidenav-container>

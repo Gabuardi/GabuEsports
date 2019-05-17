@@ -29,6 +29,17 @@
               (click)="openExternalLink(form.url)">{{form.name}}</button>
     </mat-expansion-panel>
 
+    <!-- KNOCKOUTS -->
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title>
+          Eliminatorias
+        </mat-panel-title>
+      </mat-expansion-panel-header>
+      <button mat-stroked-button class="form-button" *ngFor="let form of formsUrls.knockouts"
+              (click)="openExternalLink(form.url)">{{form.name}}</button>
+    </mat-expansion-panel>
+
   </mat-accordion>
   <!-- PHASES ACCORDION ENDS-->
 
