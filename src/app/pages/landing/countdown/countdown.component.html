@@ -1,30 +1,39 @@
-<div id="countdown-container" fxLayoutAlign="center center">
+<div fxFlex="column" fxFlexAlign="center center">
 
-  <!-- COUNTDOWN START -->
-  <div fxLayout="row" fxLayoutGap="15px" id="countdown">
+  <!-- TITLE -->
+  <h1>MSI 2019 Semifinal: SKT vs G2</h1>
 
-    <!-- HOURS -->
-    <div fxLayout="column" fxLayoutAlign="center center">
-      <h3>{{hours}}</h3>
-      <p>Horas</p>
+  <!-- COUNTDOWN CONTAINER START -->
+  <div id="countdown-container" fxLayoutAlign="center center">
+
+    <!-- COUNTDOWN START -->
+    <div fxLayout="row" fxLayoutGap="15px" id="countdown">
+
+      <!-- HOURS -->
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h3>{{hours}}</h3>
+        <p>Horas</p>
+      </div>
+
+      <!-- MINUTES -->
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h3>{{minutes}}</h3>
+        <p>Minutos</p>
+      </div>
+
+      <!-- SECONDS -->
+      <div fxLayout="column" fxLayoutAlign="center center">
+        <h3>{{seconds}}</h3>
+        <p>Segundos</p>
+      </div>
+
     </div>
+    <!-- COUNTDOWN END -->
 
-    <!-- MINUTES -->
-    <div fxLayout="column" fxLayoutAlign="center center">
-      <h3>{{minutes}}</h3>
-      <p>Minutos</p>
-    </div>
-
-    <!-- SECONDS -->
-    <div fxLayout="column" fxLayoutAlign="center center">
-      <h3>{{seconds}}</h3>
-      <p>Segundos</p>
-    </div>
+    <!-- COUNTDOWN SPINNER -->
+    <mat-progress-spinner color="primary" [diameter]="300" [value]="percent" [strokeWidth]="15"></mat-progress-spinner>
 
   </div>
-  <!-- COUNTDOWN END -->
-
-  <!-- COUNTDOWN SPINNER -->
-  <mat-progress-spinner color="primary" [diameter]="300" [value]="percent" [strokeWidth]="15"></mat-progress-spinner>
+  <!-- COUNTDOWN CONTAINER ENDS -->
 
 </div>
