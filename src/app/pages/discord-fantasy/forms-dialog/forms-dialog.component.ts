@@ -27,7 +27,9 @@ export class FormsDialogComponent {
         {name: 'Día 5', url: 'https://forms.gle/np9mJpEmW5wDH8n57'},
       ],
       knockouts: [
-        {name: 'Semifinales Día 1', url: 'https://forms.gle/tiYEjQHdXbih8Qnp9'}
+        {name: 'Semifinales Día 1', url: 'https://forms.gle/tiYEjQHdXbih8Qnp9'},
+        {name: 'Semifinales Día 2', url: 'https://forms.gle/WpnbyeEhxkXUc4Bx5'}
+
       ]
     };
   }
