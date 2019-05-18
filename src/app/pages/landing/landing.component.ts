@@ -10,14 +10,14 @@ export class LandingComponent implements OnInit {
   startDate = {
     year: 2019,
     month: 4,
-    day: 17,
-    hour: 15
+    day: 18,
+    hour: 12
   };
 
   endDate = {
     year: 2019,
     month: 4,
-    day: 18,
+    day: 19,
     hour: 7
   };
 
