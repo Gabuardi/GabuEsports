@@ -1,25 +1,30 @@
-<!-- COUNTDOWN -->
-<div fxLayout="row" fxLayoutGap="15px">
+<div id="countdown-container" fxLayoutAlign="center center">
 
-  <!-- HOURS -->
-  <div fxLayout="column" fxLayoutAlign="center center">
-    <h3>{{hours}}</h3>
-    <p>Horas</p>
-  </div>
+  <!-- COUNTDOWN START -->
+  <div fxLayout="row" fxLayoutGap="15px" id="countdown">
 
-  <!-- MINUTES -->
-  <div fxLayout="column" fxLayoutAlign="center center">
-    <h3>{{minutes}}</h3>
-    <p>Minutos</p>
-  </div>
+    <!-- HOURS -->
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <h3>{{hours}}</h3>
+      <p>Horas</p>
+    </div>
 
-  <!-- SECONDS -->
-  <div fxLayout="column" fxLayoutAlign="center center">
-    <h3>{{seconds}}</h3>
-    <p>Segundos</p>
+    <!-- MINUTES -->
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <h3>{{minutes}}</h3>
+      <p>Minutos</p>
+    </div>
+
+    <!-- SECONDS -->
+    <div fxLayout="column" fxLayoutAlign="center center">
+      <h3>{{seconds}}</h3>
+      <p>Segundos</p>
+    </div>
+
   </div>
+  <!-- COUNTDOWN END -->
+
+  <!-- COUNTDOWN SPINNER -->
+  <mat-progress-spinner color="primary" [diameter]="300" [value]="percent" [strokeWidth]="15"></mat-progress-spinner>
 
 </div>
-
-<mat-progress-spinner color="primary" [diameter]="300" [value]="percent"></mat-progress-spinner>
-<h3 *ngIf="percent === 100">IT'S TIME!!</h3>
