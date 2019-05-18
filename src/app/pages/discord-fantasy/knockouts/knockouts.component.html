@@ -5,6 +5,10 @@
     <app-bo5-predict-table [predictsData]="data.semifinals_day_1" [title]="'Semifinales: Día 1'"
                            (usersPoints)="emmitEventProcessedData($event)"></app-bo5-predict-table>
   </mat-tab>
-
+  <!-- -------------------------------- -->
+  <mat-tab label="Semifinales: Día 2">
+    <app-bo5-predict-table [predictsData]="data.semifinals_day_2" [title]="'Semifinales: Día 2'"
+                           (usersPoints)="emmitEventProcessedData($event)"></app-bo5-predict-table>
+  </mat-tab>
 
 </mat-tab-group>

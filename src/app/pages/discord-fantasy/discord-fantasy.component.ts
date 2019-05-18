@@ -4,6 +4,7 @@ import {MatDialog} from '@angular/material';
 import {FormsDialogComponent} from './forms-dialog/forms-dialog.component';
 import {PlayInData} from '../../interfaces/play-in-data';
 import {GroupsData} from '../../interfaces/groups-data';
+import {KnockoutsData} from '../../interfaces/knockouts-data';
 
 import PlayInDay1 from 'src/assets/data/PlayInDay1.json';
 import PlayInDay2 from 'src/assets/data/PlayInDay2.json';
@@ -15,7 +16,8 @@ import GroupsDay3 from 'src/assets/data/GroupsDay3.json';
 import GroupsDay4 from 'src/assets/data/GroupsDay4.json';
 import GroupsDay5 from 'src/assets/data/GroupsDay5.json';
 import SemifinalsDay1 from 'src/assets/data/SemifinalsDay1.json';
-import {KnockoutsData} from "../../interfaces/knockouts-data";
+import SemifinalsDay2 from 'src/assets/data/SemifinalsDay2.json';
+
 
 
 @Component({
@@ -69,7 +71,7 @@ export class DiscordFantasyComponent {
   setKnockoutsData() {
     this.knockoutsData = {
       semifinals_day_1: SemifinalsDay1,
-      semifinals_day_2: null,
+      semifinals_day_2: SemifinalsDay2,
       finals: null
     };
   }

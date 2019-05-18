@@ -25,19 +25,18 @@ export class CountdownComponent implements OnInit {
   }
 
   @Input()
-  set endDate(date: string) {
-    this.endDateTime = new Date(date).getTime();
+  set endDate(date: any) {
+    this.endDateTime = Date.UTC(date.year, date.month, date.day, date.hour);
   }
 
   @Input()
-  set startDate(date: string) {
-    this.startDateTime = new Date(date).getTime();
+  set startDate(date: any) {
+    this.startDateTime = Date.UTC(date.year, date.month, date.day, date.hour);
   }
 
   updateCountdown() {
     const now = new Date().getTime();
     const distanceBetweenEndDateAndNow = this.endDateTime - now;
-    console.log(this.endDateTime);
 
     if (distanceBetweenEndDateAndNow >= 0) {
       this.days = Math.floor(distanceBetweenEndDateAndNow / (1000 * 60 * 60 * 24));
@@ -45,6 +44,7 @@ export class CountdownComponent implements OnInit {
       this.minutes = Math.floor((distanceBetweenEndDateAndNow % (1000 * 60 * 60)) / (1000 * 60));
       this.seconds = Math.floor((distanceBetweenEndDateAndNow % (1000 * 60)) / 1000);
       this.percent = Math.floor((now - this.startDateTime) * 100 / (this.endDateTime - this.startDateTime));
+      console.log(this.percent);
     } else {
       this.days = 0;
       this.hours = 0;
