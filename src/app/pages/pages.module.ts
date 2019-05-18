@@ -23,6 +23,7 @@ import { PlayInComponent } from './discord-fantasy/play-in/play-in.component';
 import {FontAwesomeModule} from "@fortawesome/angular-fontawesome";
 import { GroupsComponent } from './discord-fantasy/groups/groups.component';
 import { KnockoutsComponent } from './discord-fantasy/knockouts/knockouts.component';
+import { CountdownComponent } from './landing/countdown/countdown.component';
 
 @NgModule({
   declarations: [
@@ -43,7 +44,8 @@ import { KnockoutsComponent } from './discord-fantasy/knockouts/knockouts.compon
     FormsDialogComponent,
     PlayInComponent,
     GroupsComponent,
-    KnockoutsComponent],
+    KnockoutsComponent,
+    CountdownComponent],
   imports: [
     CommonModule,
     MaterialModule,
