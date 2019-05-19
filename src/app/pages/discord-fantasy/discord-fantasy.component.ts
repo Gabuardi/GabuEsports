@@ -17,6 +17,8 @@ import GroupsDay4 from 'src/assets/data/GroupsDay4.json';
 import GroupsDay5 from 'src/assets/data/GroupsDay5.json';
 import SemifinalsDay1 from 'src/assets/data/SemifinalsDay1.json';
 import SemifinalsDay2 from 'src/assets/data/SemifinalsDay2.json';
+import GrandFinal from 'src/assets/data/GrandFinal.json';
+
 
 
 
@@ -72,7 +74,7 @@ export class DiscordFantasyComponent {
     this.knockoutsData = {
       semifinals_day_1: SemifinalsDay1,
       semifinals_day_2: SemifinalsDay2,
-      finals: null
+      finals: GrandFinal
     };
   }
 
